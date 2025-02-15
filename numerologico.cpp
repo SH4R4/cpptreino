@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 	cout<<"************************************"<< endl;
-	cout<<"* Bem vindo ao jogo da advinhaC'C#o! *"<< endl;
+	cout<<"* Bem vindo ao jogo da advinhação! *"<< endl;
 	cout<<"************************************"<< endl;
 
 	cout << "Defina a dificuldade do jogo: "<< endl;
@@ -41,7 +41,7 @@ int main()
 		double pperdidos = abs(chute - NUM_SEC)/2.0;
 		pontos -= pperdidos;
 
-		cout << "O valor do seu chute C): " << chute << endl;
+		cout << "Qual seu chute: " << chute << endl;
 
 		bool acertou = (chute == NUM_SEC);
 		bool maior = (chute > NUM_SEC);
@@ -59,13 +59,13 @@ int main()
 
 	cout << "Jogo finalizado."<< endl;
 	if(nacertou) {
-		cout << "VocC* perdeu, tente novamente."<< endl;
+		cout << "Você perdeu, tente novamente."<< endl;
 		cout << "O numero secreto era " << NUM_SEC << endl;
 	} else {
-		cout << "VocC* precisou de " << tentativas << " tentativas para acertar o numero secreto." << endl;
+		cout << "Você precisou de " << tentativas << " tentativas para acertar o numero secreto." << endl;
 		cout << "Vejamos..." << endl;
 		/*cout.precision(2);
 		cout << fixed;*/
-		cout << pontos << " bilhC5es de pontos pra vocC*!" << endl;
+		cout << pontos << " bilhões de pontos pra você!" << endl;
 	}
 }
