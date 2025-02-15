@@ -41,7 +41,7 @@ int main()
 		double pperdidos = abs(chute - NUM_SEC)/2.0;
 		pontos -= pperdidos;
 
-		cout << "Qual seu chute: " << chute << endl;
+		cout << "Seu chute foi: " << chute << endl;
 
 		bool acertou = (chute == NUM_SEC);
 		bool maior = (chute > NUM_SEC);
